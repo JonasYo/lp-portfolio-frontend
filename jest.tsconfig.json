@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "esnext",
+    "jsx": "react",
+    "sourceMap": false,
+    "experimentalDecorators": true,
+    "noImplicitUseStrict": true,
+    "removeComments": true,
+    "moduleResolution": "node",
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "typeRoots": [
+      "node_modules/@types",
+      "src/@types"
+    ],
+    "paths": {
+        "@components/*": [
+            "src/components/*"
+        ],
+        "@containers/*": [
+            "src/containers/*"
+        ],
+        "@styles/*": [
+            "src/styles/*"
+        ],
+        "@utils/*": [
+            "src/utils/*"
+        ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "out",
+    ".next",
+        "out_functions",
+        "out_publish"
+  ]
+}
