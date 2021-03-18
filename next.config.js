@@ -2,6 +2,7 @@ const withCSS                = require('@zeit/next-css')
 const {BundleAnalyzerPlugin} = require('webpack-bundle-analyzer')
 
 module.exports = withCSS({
+    target: 'serverless',
     webpack(config) {
       if (process.env.ANALYZE) {
         config.plugins.push(new BundleAnalyzerPlugin({

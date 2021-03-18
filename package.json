@@ -18,19 +18,17 @@
     "test:coverage": "jest --coverage",
     "ts:check": "tsc --noEmit"
   },
-  "dependencies": {
-    "babel-plugin-module-resolver": "^4.1.0",
-    "classnames": "^2.2.6",
-    "isomorphic-fetch": "^2.2.1",
-    "moment": "^2.22.2",
-    "next": "10.0.5",
-    "next-on-netlify": "^2.9.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-ga": "^2.5.3",
-    "react-icons": "^4.2.0"
-  },
+    "dependencies": {
+        "next": "10.0.5",
+        "next-on-netlify": "^2.7.2",
+        "react": "17.0.1",
+        "react-dom": "17.0.1",
+        "styled-components": "^5.2.1",
+        "react-ga": "^2.5.3",
+        "react-icons": "^4.2.0"
+    },
   "devDependencies": {
+    "babel-plugin-module-resolver": "^4.1.0",
     "@babel/plugin-proposal-class-properties": "^7.10.1",
     "@babel/plugin-proposal-object-rest-spread": "^7.10.1",
     "@types/classnames": "^2.2.6",
@@ -46,7 +44,6 @@
     "jest": "^24.7.1",
     "postcss": "^7.0.5",
     "postcss-preset-env": "^6.0.10",
-    "styled-components": "^5.2.1",
     "stylelint": "^13.12.0",
     "stylelint-config-recommended": "^4.0.0",
     "stylelint-config-styled-components": "^0.1.1",
