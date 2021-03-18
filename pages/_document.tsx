@@ -1,17 +1,37 @@
 import * as React from 'react'
-import Document, {Head, Main, NextScript} from 'next/document'
+import Document, {Head, Main, NextScript} from 'next/document';
+import { ServerStyleSheet } from 'styled-components';
+
 import {
   DEV, FB_TRACKING_ID, SENTRY_TRACKING_ID, SITE_DESCRIPTION, SITE_IMAGE,
   SITE_NAME, SITE_TITLE
 } from '../src/constants/env'
 
 export default class extends Document {
-  static async getInitialProps(...args) {
-    const documentProps = await Document.getInitialProps(...args)
-    const {req, renderPage} = args[0]
-    const page = renderPage()
+ static async getInitialProps(ctx) {
+    const sheet = new ServerStyleSheet();
+    const originalRenderPage = ctx.renderPage;
 
-    return {...documentProps, ...page}
+    try {
+      ctx.renderPage = () =>
+        originalRenderPage({
+          enhanceApp: (App) => (props) =>
+            sheet.collectStyles(<App {...props} />),
+        });
+
+      const initialProps = await Document.getInitialProps(ctx);
+      return {
+        ...initialProps,
+        styles: (
+          <>
+            {initialProps.styles}
+            {sheet.getStyleElement()}
+          </>
+        ),
+      };
+    } finally {
+      sheet.seal();
+    }
   }
 
   render() {

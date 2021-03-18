@@ -3,7 +3,6 @@ module.exports = (api) => {
     return {
         'presets': [
             'next/babel',
-            '@zeit/next-typescript/babel',
         ],
         'plugins': [
             '@babel/proposal-class-properties',

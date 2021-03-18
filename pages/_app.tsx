@@ -1,40 +1,6 @@
-import 'isomorphic-fetch'
-import React from 'react'
-import {Provider} from 'react-redux'
-import App, {Container} from 'next/app'
-import {getStore} from '../src/redux/store'
-
+import React from 'react';
 import '../src/styles/globals.css';
 
-export default class extends App {
-  static async getInitialProps({Component, router, ctx}) {
-    const server = !!ctx.req
-    const store = getStore(undefined, server)
-    const state = store.getState()
-    const out = {state, server} as any
+const App = ({ Component, pageProps }) => <Component {...pageProps} />;
 
-    if (Component.getInitialProps) {
-      return {
-        ...out,
-        pageProps: {
-          ...await Component.getInitialProps(ctx)
-        }
-      }
-    }
-
-    return out
-  }
-
-  render() {
-    const {props} = this as any
-    const {Component, pageProps} = props
-
-    return (
-      <Container>
-        <Provider store={getStore(undefined, props.server)}>
-          <Component {...pageProps} />
-        </Provider>
-      </Container>
-    )
-  }
-}
+export default App;
