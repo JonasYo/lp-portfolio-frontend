@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { Container, Text } from './Banner.styles';
 
 const Home = props => (

@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
 
 import { Container, Text } from './Footer.styles';
 
- const Footer = props => (
+const Footer = () => (
   <Container>
-    <Text>© 2021 Jonas Siqueira</Text>
+    <Text fadeIn>© 2021 Jonas Siqueira</Text>
   </Container>
 );
 
