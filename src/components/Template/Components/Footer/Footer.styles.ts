@@ -1,10 +1,10 @@
 import styled from 'styled-components';
-import GeneralStyles from '@styles/general';
+import GeneralStyles from '@styles/theme';
 
-const { animations } = GeneralStyles;
+const { animations, patterns } = GeneralStyles;
 
 export const Container = styled.div`
-  padding: 0.5rem calc((100vw - 1000px) / 4);
+  padding: ${patterns.extraDesktopPadding};
 `;
 
 export const Text = styled.p`

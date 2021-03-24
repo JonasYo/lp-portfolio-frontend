@@ -1,6 +1,42 @@
 import React from 'react';
-import '../src/styles/globals.css';
 
-const App = ({ Component, pageProps }) => <Component {...pageProps} />;
+import Head from 'next/head';
+import { NextSeo } from 'next-seo';
+import { AppProps } from 'next/app';
+import { ThemeProvider } from 'styled-components';
+
+import theme from '@styles/theme';
+import GlobalStyle from '@styles/globals.styles';
+
+import {
+  SITE_TITLE,
+  SITE_DESCRIPTION,
+  SITE_IMAGE,
+  SITE_NAME,
+  SITE_URL,
+} from '../src/constants/env';
+
+const App = ({ Component, pageProps }: AppProps) => (
+  <ThemeProvider theme={theme}>
+    <Head>
+      <link rel="shortcut icon" href="/images/favicon.ico" />
+    </Head>
+    <NextSeo
+      title={SITE_TITLE}
+      description={SITE_DESCRIPTION}
+      canonical={SITE_URL}
+      openGraph={{
+        url: SITE_URL,
+        title: SITE_TITLE,
+        description: SITE_DESCRIPTION,
+        images: [{ url: SITE_IMAGE }],
+        site_name: SITE_NAME,
+        locale: 'pt_BR',
+      }}
+    />
+    <GlobalStyle />
+    <Component {...pageProps} />
+  </ThemeProvider>
+);
 
 export default App;

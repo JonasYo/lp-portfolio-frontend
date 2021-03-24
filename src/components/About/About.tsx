@@ -1,13 +1,25 @@
-import React from 'react'
+import React from 'react';
 
-import { Container, Text } from './About.styles';
+import {
+  Container,
+  Content,
+  Subtitle,
+  Description,
+  Wrapper,
+} from './About.styles';
 
-const Home = props => (
-  <Container >
-    <Text>
-       Seção de Sobre
-    </Text>
+const About = () => (
+  <Container>
+    <Content fadeIn>
+      <Subtitle>Sobre</Subtitle>
+      <Wrapper>
+        <Description>
+          Produtos e serviços para melhorar sua experiência de compra no Brasil
+          e no mundo.
+        </Description>
+      </Wrapper>
+    </Content>
   </Container>
 );
 
-export default Home;
+export default About;

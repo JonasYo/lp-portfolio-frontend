@@ -1,12 +1,63 @@
 import styled from 'styled-components';
+import GeneralStyles from '@styles/theme';
+
+const {
+  font: { sizes },
+  animations,
+  patterns,
+  mediaQuery,
+  colors,
+} = GeneralStyles;
 
 export const Container = styled.div`
-  padding: 0.5rem calc((100vw - 1000px) / 4);
-  background-color: #131627;
+  padding: ${patterns.mobilePadding};
+
+  ${mediaQuery.extraDesktopMediaQuery} {
+    padding: ${patterns.extraDesktopPadding};
+    margin: 15rem auto;
+  }
 `;
 
-export const Text = styled.p`
-  font-size: 3rem;
+export const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  ${mediaQuery.extraDesktopMediaQuery} {
+    flex-direction: inline;
+    justify-content: space-between;
+  }
+`;
+
+export const Subtitle = styled.h2`
+  animation: ${({ fadeIn }) => fadeIn && animations.fadeInUp} 1s linear;
+
+  font-size: ${sizes.xlarge};
   font-weight: 600;
-  color: #fff;
+  color: ${colors.white};
+  border-left: 6px solid ${colors.frostbite};
+  padding-left: 1rem;
+
+  ${mediaQuery.extraDesktopMediaQuery} {
+    font-size: ${sizes.xxlarge};
+  }
+`;
+
+export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  max-width: 60rem;
+  align-self: center;
+  margin-top: 3.2rem;
+`;
+
+export const Description = styled.p`
+  font-weight: 400;
+  text-align: center;
+  font-size: ${sizes.small};
+  color: ${colors.white};
+
+  ${mediaQuery.extraDesktopMediaQuery} {
+    font-size: ${sizes.xlarge};
+    text-align: left;
+  }
 `;

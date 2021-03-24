@@ -1,13 +1,16 @@
 import { FaBars } from 'react-icons/fa';
-import Link from 'next/link'
+import Link from 'next/link';
 import styled from 'styled-components';
+import GeneralStyles from '@styles/theme';
+
+const { patterns } = GeneralStyles;
 
 export const Container = styled.nav`
   background: #fff;
   height: 80px;
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem calc((100vw - 1000px) / 4);
+  padding: ${patterns.extraDesktopPadding};
   z-index: 10;
 `;
 
@@ -17,15 +20,15 @@ export const NavMenu = styled.div`
   margin-right: -24px;
 
   a {
-  text-decoration: none;
+    text-decoration: none;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
-    
-  &.active {
-  text-decoration: none;
-    color: #15cdfc;
+
+    &.active {
+      text-decoration: none;
+      color: #15cdfc;
+    }
   }
-}
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -54,5 +57,3 @@ export const Bars = styled(FaBars)`
     cursor: pointer;
   }
 `;
-
-

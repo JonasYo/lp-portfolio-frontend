@@ -1,11 +1,11 @@
-import React from 'react'
-import Navbar from '../Navbar'
+import React from 'react';
+import Navbar from '../Navbar';
 
 import { Container } from './Header.styles';
 
-const Header = props =>(
+const Header = () => (
   <Container>
-    <Navbar/>
+    <Navbar />
   </Container>
 );
 

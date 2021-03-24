@@ -1,9 +1,9 @@
 {
-  "name": "We Makke",
+  "name": "We-Makke",
   "version": "0.1.0",
   "main": "index.js",
-  "author": "",
-  "license": "",
+  "author": "Jonas",
+  "license": "MIT",
   "scripts": {
     "start:dev": "next",
     "build:dev": "next build",
@@ -19,6 +19,7 @@
   "dependencies": {
     "next": "10.0.5",
     "next-on-netlify": "^2.7.2",
+    "next-seo": "^4.22.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-ga": "^2.5.3",
