@@ -3,7 +3,11 @@ import Link from 'next/link';
 import styled from 'styled-components';
 import GeneralStyles from '@styles/theme';
 
-const { patterns } = GeneralStyles;
+const {
+  patterns,
+  mediaQuery,
+  font: { sizes },
+} = GeneralStyles;
 
 export const Container = styled.nav`
   background: #fff;
@@ -29,7 +33,8 @@ export const NavMenu = styled.div`
       color: #15cdfc;
     }
   }
-  @media screen and (max-width: 768px) {
+
+  ${mediaQuery.mobileMediaQuery} {
     display: none;
   }
 `;
@@ -47,13 +52,12 @@ export const Bars = styled(FaBars)`
   display: none;
   color: #000;
 
-  @media screen and (max-width: 768px) {
+  ${mediaQuery.mobileMediaQuery} {
     display: block;
-    position: absolute;
     top: 0;
     right: 0;
     transform: translate(-100%, 75%);
-    font-size: 1.8rem;
+    font-size: ${sizes.large};
     cursor: pointer;
   }
 `;

@@ -7,6 +7,7 @@ export default {
     transparent: 'transparent',
     aliceBlue: '#F6F9FC',
     frostbite: '#f231a5',
+    blackRussian: '#131627',
   },
   font: {
     family: 'Poppins, sans-serif',
@@ -22,7 +23,7 @@ export default {
   },
   mediaQuery: {
     mobileMediaQuery: '@media only screen and (max-width: 768px)',
-    extraMobileMediaQuery: '@media only screen and (min-width: 992px)',
+    tabletMediaQuery: '@media only screen and (min-width: 992px)',
     desktopMediaQuery: '@media only screen and (min-width: 1200px)',
     extraDesktopMediaQuery: '@media only screen and (min-width: 1900px)',
   },
@@ -42,7 +43,7 @@ export default {
   },
   patterns: {
     mobilePadding: '6rem calc(1.6rem)',
-    extraMobilePadding: '0.5rem calc((100vw - 1000px) / 3)',
+    tabletPadding: '0.5rem calc((100vw - 100px) / 8)',
     desktopPadding: '0.5rem calc((100vw - 1000px) / 3)',
     extraDesktopPadding: '0.5rem calc((100vw - 1000px) / 3)',
   },
@@ -54,5 +55,12 @@ export default {
     large: '6.0rem',
     xlarge: '6.4rem',
     xxlarge: '12.8rem',
+  },
+  border: {
+    radius: '0.4rem',
+  },
+  grid: {
+    container: '130rem',
+    gutter: '3.2rem',
   },
 };

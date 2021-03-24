@@ -11,58 +11,37 @@ const {
 
 export const Container = styled.div`
   padding: ${patterns.mobilePadding};
-  transform: skewY(1deg);
+  transform: skewY(3deg);
   background-color: ${colors.white};
-  display: flex;
-  flex-direction: column;
 
-  ${mediaQuery.tabletMediaQuery} {
-    padding: ${patterns.tabletPadding};
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  ${mediaQuery.desktopMediaQuery} {
-    padding: ${patterns.desktopPadding};
-    flex-direction: row;
-    justify-content: space-between;
-  }
   ${mediaQuery.extraDesktopMediaQuery} {
     padding: ${patterns.extraDesktopPadding};
-    flex-direction: row;
-    justify-content: space-between;
+    margin: 15rem auto;
   }
 `;
 
 export const Content = styled.div`
-  transform: skewY(-1deg);
+  display: flex;
+  flex-direction: column;
+  transform: skewY(-3deg);
 
-  ${mediaQuery.tabletMediaQuery} {
-    margin: 8rem 0;
-  }
-  ${mediaQuery.desktopMediaQuery} {
-    margin: 8rem 0;
-  }
   ${mediaQuery.extraDesktopMediaQuery} {
-    margin: 15rem 0;
+    flex-direction: inline;
+    justify-content: space-between;
   }
 `;
 
 export const Subtitle = styled.h2`
   animation: ${({ fadeIn }) => fadeIn && animations.fadeInUp} 1s linear;
-  font-size: ${sizes.large};
+
+  font-size: ${sizes.xlarge};
   font-weight: 600;
   color: ${colors.black};
   border-left: 6px solid ${colors.frostbite};
   padding-left: 1rem;
 
-  ${mediaQuery.tabletMediaQuery} {
-    font-size: ${sizes.large};
-  }
-  ${mediaQuery.desktopMediaQuery} {
-    font-size: ${sizes.large};
-  }
   ${mediaQuery.extraDesktopMediaQuery} {
-    font-size: ${sizes.xlarge};
+    font-size: ${sizes.xxlarge};
   }
 `;
 
@@ -80,16 +59,8 @@ export const Description = styled.p`
   font-size: ${sizes.small};
   color: ${colors.black};
 
-  ${mediaQuery.tabletMediaQuery} {
-    font-size: ${sizes.xsmall};
-    text-align: left;
-  }
-  ${mediaQuery.desktopMediaQuery} {
-    font-size: ${sizes.xsmall};
-    text-align: left;
-  }
   ${mediaQuery.extraDesktopMediaQuery} {
-    font-size: ${sizes.medium};
+    font-size: ${sizes.xlarge};
     text-align: left;
   }
 `;

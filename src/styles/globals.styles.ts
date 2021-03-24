@@ -1,21 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins'); */
-
-/* html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: 'Poppins';
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box; 
-} */
-
 import { createGlobalStyle, css } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
@@ -42,7 +24,7 @@ const GlobalStyle = createGlobalStyle`
       scroll-behavior: smooth;
     }
     body {
-      background-color: ${theme.colors.mainBg};
+      background-color: ${theme.colors.blackRussian};
       color: ${theme.colors.white};
       font-size: ${theme.font.sizes.small};
     }

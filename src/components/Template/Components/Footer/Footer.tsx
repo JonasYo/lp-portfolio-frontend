@@ -1,10 +1,11 @@
 import React from 'react';
 
-import { Container, Text } from './Footer.styles';
+import { Container, Copyright } from './Footer.styles';
 
 const Footer = () => (
   <Container>
-    <Text fadeIn>© 2021 Jonas Siqueira</Text>
+    <Copyright fadeIn>Desenvolvido por Jonas Siqueira</Copyright>
+    <Copyright fadeIn>© Copyright 2021.</Copyright>
   </Container>
 );
 

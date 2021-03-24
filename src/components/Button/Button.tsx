@@ -6,23 +6,20 @@ import {
   Subtitle,
   Description,
   Wrapper,
-  MailTo,
-} from './ContactUs.styles';
+} from './Button.styles';
 
-const ContactUs = () => (
+const Card = () => (
   <Container>
     <Content fadeIn>
       <Subtitle>Contato</Subtitle>
       <Wrapper>
         <Description>
-          Fique a vontade para entrar em contato sempre que precisar ;D.
+          Produtos e serviços para melhorar sua experiência de compra no Brasil
+          e no mundo.
         </Description>
-        <MailTo href="mailto:jonascska07@gmail.com">
-          jonascska07@gmail.com
-        </MailTo>
       </Wrapper>
     </Content>
   </Container>
 );
 
-export default ContactUs;
+export default Card;

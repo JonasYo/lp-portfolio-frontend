@@ -1,4 +1,7 @@
 import React from 'react';
+import Card from '@components/Card';
+
+import content from './content';
 
 import {
   Container,
@@ -6,6 +9,7 @@ import {
   Subtitle,
   Description,
   Wrapper,
+  CardList
 } from './Services.styles';
 
 const Services = () => (
@@ -18,6 +22,12 @@ const Services = () => (
           e no mundo.
         </Description>
       </Wrapper>
+
+      <CardList>
+        {content.map(({ title, description }, index) => (
+          <Card key={index} title={title} description={description} />
+        ))}
+      </CardList>
     </Content>
   </Container>
 );

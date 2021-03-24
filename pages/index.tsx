@@ -1,9 +1,9 @@
-import React from 'react'
-import Home from '../src/containers/Home'
-import Template from '../src/components/Template'
+import React from 'react';
+import Home from '@containers/Home';
+import Template from '@components/Template';
 
-export default props => (
+export default () => (
   <Template>
-    <Home/>
+    <Home />
   </Template>
 );
