@@ -7,22 +7,22 @@ const Navbar = () => (
   <Container>
     <Link href="/">
       <img
-        src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png"
+        src="https://fontmeme.com/permalink/210507/2e4607094f728ee424371d3b9a0586ed.png"
         alt="logo"
       />
     </Link>
     <Bars />
     <NavMenu>
-      <NavLink href="/" activeStyle>
+      <NavLink href="#home" activeStyle>
         Home
       </NavLink>
-      <NavLink href="/about" activeStyle>
+      <NavLink href="#about" activeStyle>
         Sobre
       </NavLink>
-      <NavLink href="/services" activeStyle>
+      <NavLink href="#services" activeStyle>
         Serviços
       </NavLink>
-      <NavLink href="/contact" activeStyle>
+      <NavLink href="#contact" activeStyle>
         Contato
       </NavLink>
     </NavMenu>

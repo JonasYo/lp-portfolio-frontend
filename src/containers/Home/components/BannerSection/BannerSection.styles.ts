@@ -9,7 +9,7 @@ const {
   mediaQuery,
 } = GeneralStyles;
 
-export const Container = styled.div`
+export const Container = styled.section`
   padding: ${patterns.mobilePadding};
   display: flex;
   flex-direction: column;

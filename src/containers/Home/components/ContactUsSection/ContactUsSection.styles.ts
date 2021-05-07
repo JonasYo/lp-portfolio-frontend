@@ -10,7 +10,7 @@ const {
   spacings,
 } = GeneralStyles;
 
-export const Container = styled.div`
+export const Container = styled.section`
   padding: ${patterns.mobilePadding};
   transform: skewY(1deg);
   background-color: ${colors.white};

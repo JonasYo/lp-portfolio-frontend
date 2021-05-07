@@ -1,18 +1,22 @@
-import React from 'react'
+import React from 'react';
 
-import Banner from '../../components/Banner';
-import About from '../../components/About';
-import Services from '../../components/Services';
-import ContactUs from '../../components/ContactUs';
+import {
+  BannerSection,
+  AboutSection,
+  ServicesSection,
+  ContactUsSection,
+} from './components';
 
-import { Container, Text } from './Home.styles';
+import content from '../content';
 
-const Home = props => (
-  <Container >
-      <Banner/>
-      <About/>
-      <Services/>
-      <ContactUs/>
+import { Container } from './Home.styles';
+
+const Home = () => (
+  <Container>
+    <BannerSection {...content.bannerSection} />
+    <AboutSection {...content.aboutSection} />
+    <ServicesSection {...content.serviceSection} />
+    <ContactUsSection {...content.contactSection} />
   </Container>
 );
 
