@@ -40,11 +40,14 @@ export const Container = styled.section`
   }
 `;
 
-export const Wrapper = styled.div`
+export const Content = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 60rem;
   align-self: center;
+`;
+export const Wrapper = styled.div`
+  margin-top: ${spacings.medium};
 `;
 
 export const Title = styled.h1`
@@ -78,7 +81,7 @@ export const Description = styled.h2`
     text-align: left;
   }
   ${mediaQuery.desktopMediaQuery} {
-    font-size: ${sizes.large};
+    font-size: ${sizes.medium};
     text-align: left;
   }
   ${mediaQuery.extraDesktopMediaQuery} {

@@ -83,15 +83,15 @@ export const Description = styled.p`
   color: ${colors.black};
 
   ${mediaQuery.tabletMediaQuery} {
-    font-size: ${sizes.xsmall};
+    font-size: ${sizes.medium};
     text-align: left;
   }
   ${mediaQuery.desktopMediaQuery} {
-    font-size: ${sizes.xsmall};
+    font-size: ${sizes.medium};
     text-align: left;
   }
   ${mediaQuery.extraDesktopMediaQuery} {
-    font-size: ${sizes.medium};
+    font-size: ${sizes.large};
     text-align: left;
   }
 `;
@@ -104,11 +104,11 @@ export const MailTo = styled.a`
   margin-top: ${spacings.small};
 
   ${mediaQuery.tabletMediaQuery} {
-    font-size: ${sizes.xsmall};
+    font-size: ${sizes.small};
     text-align: left;
   }
   ${mediaQuery.desktopMediaQuery} {
-    font-size: ${sizes.xsmall};
+    font-size: ${sizes.small};
     text-align: left;
   }
   ${mediaQuery.extraDesktopMediaQuery} {

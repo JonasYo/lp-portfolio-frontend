@@ -35,15 +35,15 @@ export const Copyright = styled.p`
   margin: ${spacings.small};
 
   ${mediaQuery.tabletMediaQuery} {
-    font-size: ${sizes.xsmall};
+    font-size: ${sizes.small};
     text-align: left;
   }
   ${mediaQuery.desktopMediaQuery} {
-    font-size: ${sizes.xsmall};
+    font-size: ${sizes.small};
     text-align: left;
   }
   ${mediaQuery.extraDesktopMediaQuery} {
-    font-size: ${sizes.xsmall};
+    font-size: ${sizes.medium};
     text-align: left;
   }
 `;

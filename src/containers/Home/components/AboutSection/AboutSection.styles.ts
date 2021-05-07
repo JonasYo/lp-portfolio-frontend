@@ -7,6 +7,7 @@ const {
   patterns,
   mediaQuery,
   colors,
+  spacings,
 } = GeneralStyles;
 
 export const Container = styled.section`
@@ -71,7 +72,7 @@ export const Wrapper = styled.div`
   flex-direction: column;
   max-width: 60rem;
   align-self: center;
-  margin-top: 3.2rem;
+  margin-top: ${spacings.medium};
 `;
 
 export const Description = styled.p`
@@ -81,15 +82,15 @@ export const Description = styled.p`
   color: ${colors.black};
 
   ${mediaQuery.tabletMediaQuery} {
-    font-size: ${sizes.xsmall};
+    font-size: ${sizes.medium};
     text-align: left;
   }
   ${mediaQuery.desktopMediaQuery} {
-    font-size: ${sizes.xsmall};
+    font-size: ${sizes.medium};
     text-align: left;
   }
   ${mediaQuery.extraDesktopMediaQuery} {
-    font-size: ${sizes.medium};
+    font-size: ${sizes.large};
     text-align: left;
   }
 `;

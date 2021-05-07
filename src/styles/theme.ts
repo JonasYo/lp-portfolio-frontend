@@ -12,13 +12,13 @@ export default {
   font: {
     family: 'Poppins, sans-serif',
     sizes: {
-      xxsmall: '1.4rem',
-      xsmall: '1.6rem',
-      small: '1.8rem',
+      xxsmall: '0.5rem',
+      xsmall: '1.0rem',
+      small: '1.6rem',
       medium: '2.2rem',
-      large: '2.6rem',
-      xlarge: '3.4rem',
-      xxlarge: '5.2rem',
+      large: '3.6rem',
+      xlarge: '4.4rem',
+      xxlarge: '6.2rem',
     },
   },
   mediaQuery: {

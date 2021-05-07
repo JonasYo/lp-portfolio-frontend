@@ -27,6 +27,7 @@ export const NavMenu = styled.div`
     text-decoration: none;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+    color: #131627;
 
     &.active {
       text-decoration: none;
@@ -37,15 +38,6 @@ export const NavMenu = styled.div`
   ${mediaQuery.mobileMediaQuery} {
     display: none;
   }
-`;
-
-export const NavLink = styled(Link)`
-  color: #fff;
-  display: flex;
-  align-items: center;
-  padding: 0 1rem;
-  height: 100%;
-  cursor: pointer;
 `;
 
 export const Bars = styled(FaBars)`

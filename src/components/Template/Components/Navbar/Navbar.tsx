@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-import { Container, NavLink, Bars, NavMenu } from './Navbar.styles';
+import { Container, Bars, NavMenu } from './Navbar.styles';
 
 const Navbar = () => (
   <Container>
@@ -13,18 +13,10 @@ const Navbar = () => (
     </Link>
     <Bars />
     <NavMenu>
-      <NavLink href="#home" activeStyle>
-        Home
-      </NavLink>
-      <NavLink href="#about" activeStyle>
-        Sobre
-      </NavLink>
-      <NavLink href="#services" activeStyle>
-        Serviços
-      </NavLink>
-      <NavLink href="#contact" activeStyle>
-        Contato
-      </NavLink>
+      <Link href="#home">Home</Link>
+      <Link href="#about">Sobre</Link>
+      <Link href="#technologies">Tecnologias</Link>
+      <Link href="#contact">Contato</Link>
     </NavMenu>
   </Container>
 );

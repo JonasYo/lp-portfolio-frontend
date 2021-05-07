@@ -35,12 +35,12 @@ export const Title = styled.h3`
   color: ${colors.black};
 
   ${mediaQuery.tabletMediaQuery} {
-    font-size: ${sizes.xsmall};
+    font-size: ${sizes.small};
     text-align: left;
     font-weight: 400;
   }
   ${mediaQuery.desktopMediaQuery} {
-    font-size: ${sizes.xsmall};
+    font-size: ${sizes.small};
     text-align: left;
     font-weight: 400;
   }
@@ -59,15 +59,15 @@ export const Description = styled.p`
   margin-top: ${spacings.small};
 
   ${mediaQuery.tabletMediaQuery} {
-    font-size: ${sizes.small};
+    font-size: ${sizes.medium};
     text-align: left;
   }
   ${mediaQuery.desktopMediaQuery} {
-    font-size: ${sizes.small};
+    font-size: ${sizes.medium};
     text-align: left;
   }
   ${mediaQuery.extraDesktopMediaQuery} {
-    font-size: ${sizes.xsmall};
+    font-size: ${sizes.medium};
     text-align: left;
   }
 `;

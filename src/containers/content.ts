@@ -1,6 +1,6 @@
 const content = {
   bannerSection: {
-    title: 'We Makke',
+    title: 'Jonas Siqueira',
     description:
       'Nós transformamos o desejo do cliente em realidade, gerando acesso e oportunidades para brasileiros.',
     image: {
@@ -12,7 +12,7 @@ const content = {
   aboutSection: {
     title: 'Sobre',
     description:
-      'Produtos e serviços para melhorar sua experiência de compra no Brasil e no mundo.',
+      'Sou um desenvolvedor que adora aplicar meus conhecimentos para solucionar problemas. \n \n Formado em Análise e Desenvolvimento de Sistemas pela Faculdade de Pinhais (FAPI) e cursando Inglês na instituição de ensino de idiomas inFlux.',
   },
   contactSection: {
     title: 'Contato',
@@ -22,34 +22,28 @@ const content = {
     linkedinAddress: 'https://www.linkedin.com/in/jonas-siqueira-marcelino/',
   },
   serviceSection: {
-    title: 'Serviços',
-    description:
-      'Produtos e serviços para melhorar sua experiência de compra no Brasil e no mundo.',
+    title: 'Tecnologias',
+    description: 'Linguagens/Frameworks/Produtos que possuo experiência.',
     listTechnological: [
       {
-        title: 'Criação de Sites',
+        title: 'React JS',
         description:
           'Criação de sites, websites personlizados. Sites em HTML, CSS, Jquery, PHP e Mysql.',
       },
       {
-        title: 'Responsive Design',
+        title: 'Node JS',
         description:
           'Sites adaptáveis em todos os dispositivos móveis, sites responsivos e flexbox.',
       },
       {
-        title: 'Landing Pages',
+        title: 'Contentful',
         description:
           'Landing Pages para captação de leads, vendas. Desenvolvidas desde a arte até o front.',
       },
       {
-        title: 'Serviços de SEO',
+        title: 'Jest/RTL',
         description:
           'Otimização de sites, paginas web para melhorar o posicionamento nos buscadores orgnanicos.',
-      },
-      {
-        title: 'Freelancer Front-end',
-        description:
-          'Já possui a arte para seu site ou loja virtual? Desenvolvo a programação de seu projeto.',
       },
     ],
   },

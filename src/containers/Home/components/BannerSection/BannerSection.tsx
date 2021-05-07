@@ -4,6 +4,7 @@ import {
   Container,
   Title,
   Description,
+  Content,
   Wrapper,
   Image,
 } from './BannerSection.styles';
@@ -19,10 +20,12 @@ interface IProps {
 
 const BannerSection = ({ title, description, image }: IProps) => (
   <Container id="home">
-    <Wrapper>
+    <Content>
       <Title>{title}</Title>
-      <Description>{description}</Description>
-    </Wrapper>
+      <Wrapper>
+        <Description>{description}</Description>
+      </Wrapper>
+    </Content>
     <Image src={image.url} alt={image.alt} />
   </Container>
 );

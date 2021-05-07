@@ -28,7 +28,7 @@ const ContactUsSection = ({
       <Wrapper>
         <Description>{description}</Description>
         <MailTo href="mailto:jonascska07@gmail.com">{emailAddress}</MailTo>
-        <Description>{linkedinAddress}</Description>
+        <MailTo>{linkedinAddress}</MailTo>
       </Wrapper>
     </Content>
   </Container>
