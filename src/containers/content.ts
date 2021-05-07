@@ -1,6 +1,6 @@
 const content = {
   bannerSection: {
-    title: 'Jonas Siqueira',
+    title: 'Jonas Siqueira - Site em Construção',
     description:
       'Nós transformamos o desejo do cliente em realidade, gerando acesso e oportunidades para brasileiros.',
     image: {
@@ -23,7 +23,7 @@ const content = {
   },
   serviceSection: {
     title: 'Tecnologias',
-    description: 'Linguagens/Frameworks/Produtos que possuo experiência.',
+    description: 'Tecnologias que possuo experiência.',
     listTechnological: [
       {
         title: 'React JS',
@@ -31,17 +31,22 @@ const content = {
           'Criação de sites, websites personlizados. Sites em HTML, CSS, Jquery, PHP e Mysql.',
       },
       {
-        title: 'Node JS',
+        title: 'Next JS',
         description:
           'Sites adaptáveis em todos os dispositivos móveis, sites responsivos e flexbox.',
       },
       {
-        title: 'Contentful',
+        title: 'Contentful CMS',
         description:
           'Landing Pages para captação de leads, vendas. Desenvolvidas desde a arte até o front.',
       },
       {
-        title: 'Jest/RTL',
+        title: 'Jest',
+        description:
+          'Otimização de sites, paginas web para melhorar o posicionamento nos buscadores orgnanicos.',
+      },
+      {
+        title: 'Testing Library',
         description:
           'Otimização de sites, paginas web para melhorar o posicionamento nos buscadores orgnanicos.',
       },
