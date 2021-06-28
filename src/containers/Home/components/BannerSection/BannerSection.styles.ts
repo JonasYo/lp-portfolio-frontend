@@ -20,6 +20,7 @@ export const Container = styled.section`
     margin: 8rem auto;
     background-color: #131627;
 
+    flex-direction: row;
     justify-content: space-between;
   }
   ${mediaQuery.desktopMediaQuery} {

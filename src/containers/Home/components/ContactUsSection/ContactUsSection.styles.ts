@@ -71,7 +71,6 @@ export const Subtitle = styled.h2`
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 60rem;
   align-self: center;
   margin-top: ${spacings.medium};
 `;
@@ -96,12 +95,18 @@ export const Description = styled.p`
   }
 `;
 
+export const FlexWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+`;
+
 export const MailTo = styled.a`
   font-weight: 400;
-  text-align: center;
   font-size: ${sizes.small};
   color: ${colors.black};
   margin-top: ${spacings.small};
+  text-align: left;
 
   ${mediaQuery.tabletMediaQuery} {
     font-size: ${sizes.small};
@@ -114,5 +119,25 @@ export const MailTo = styled.a`
   ${mediaQuery.extraDesktopMediaQuery} {
     font-size: ${sizes.medium};
     text-align: left;
+  }
+`;
+
+export const LinkedinAddress = styled(MailTo)``;
+
+export const Icon = styled.img`
+  width: 3rem;
+  margin: 2rem 2rem 0 0;
+
+  ${mediaQuery.tabletMediaQuery} {
+    width: 3rem;
+    margin: 2rem 2rem 0 0;
+  }
+  ${mediaQuery.desktopMediaQuery} {
+    width: 4rem;
+    margin: 2rem 2rem 0 0;
+  }
+  ${mediaQuery.extraDesktopMediaQuery} {
+    width: 4rem;
+    margin: 2rem 2rem 0 0;
   }
 `;

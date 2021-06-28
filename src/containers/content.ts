@@ -1,8 +1,8 @@
 const content = {
   bannerSection: {
-    title: 'Jonas Siqueira - Site em Construção',
+    title: 'Jonas Siqueira',
     description:
-      'Nós transformamos o desejo do cliente em realidade, gerando acesso e oportunidades para brasileiros.',
+      'Sou um desenvolvedor que adora aplicar meus conhecimentos para solucionar problemas.',
     image: {
       url: '/images/building-websites.svg',
       alt:
@@ -12,14 +12,21 @@ const content = {
   aboutSection: {
     title: 'Sobre',
     description:
-      'Sou um desenvolvedor que adora aplicar meus conhecimentos para solucionar problemas. \n \n Formado em Análise e Desenvolvimento de Sistemas pela Faculdade de Pinhais (FAPI) e cursando Inglês na instituição de ensino de idiomas inFlux.',
+      'Formado em Análise e Desenvolvimento de Sistemas pela Faculdade de Pinhais (FAPI) e cursando Inglês na instituição de ensino de idiomas inFlux.',
   },
   contactSection: {
     title: 'Contato',
     description:
       'Fique a vontade para entrar em contato sempre que precisar ;D.',
-    emailAddress: 'jonascska07@gmail.com',
-    linkedinAddress: 'https://www.linkedin.com/in/jonas-siqueira-marcelino/',
+    email: {
+      link: 'jonascska07@gmail.com',
+      icon:
+        'https://pics.freeicons.io/uploads/icons/png/7969340901574338609-512.png',
+    },
+    linkedin: {
+      link: 'https://www.linkedin.com/in/jonas-siqueira-marcelino/',
+      icon: 'https://image.flaticon.com/icons/png/512/174/174857.png',
+    },
   },
   serviceSection: {
     title: 'Tecnologias',
@@ -28,27 +35,26 @@ const content = {
       {
         title: 'React JS',
         description:
-          'Criação de sites, websites personlizados. Sites em HTML, CSS, Jquery, PHP e Mysql.',
+          'É uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas.',
       },
       {
         title: 'Next JS',
         description:
-          'Sites adaptáveis em todos os dispositivos móveis, sites responsivos e flexbox.',
+          'É uma estrutura da web de desenvolvimento front-end React de código aberto.',
       },
       {
         title: 'Contentful CMS',
-        description:
-          'Landing Pages para captação de leads, vendas. Desenvolvidas desde a arte até o front.',
+        description: 'É uma plataforma de gerenciamento de conteúdo flexível.',
       },
       {
         title: 'Jest',
         description:
-          'Otimização de sites, paginas web para melhorar o posicionamento nos buscadores orgnanicos.',
+          'É um framework de teste em JavaScript que é mantida pelo Facebook.',
       },
       {
-        title: 'Testing Library',
+        title: 'React Testing Library',
         description:
-          'Otimização de sites, paginas web para melhorar o posicionamento nos buscadores orgnanicos.',
+          'Disponibiza várias APIs para manipular os componentes e incentivar melhores práticas de teste.',
       },
     ],
   },

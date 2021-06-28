@@ -1,11 +1,20 @@
 import React from 'react';
-import Navbar from '../Navbar';
+import Link from 'next/link';
 
-import Container from './Header.styles';
+import Burger from './components/Burger/Burger';
+
+import { Container } from './Header.styles';
 
 const Header = () => (
   <Container>
-    <Navbar />
+    <Link href="/">
+      <img
+        src="https://fontmeme.com/permalink/210507/2e4607094f728ee424371d3b9a0586ed.png"
+        alt="logo"
+      />
+    </Link>
+
+    <Burger />
   </Container>
 );
 
