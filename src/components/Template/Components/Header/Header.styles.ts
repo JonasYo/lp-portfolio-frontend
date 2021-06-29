@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import GeneralStyles from '@styles/theme';
+import GeneralStyles from '@styles/themes/default';
 
 const { patterns, mediaQuery } = GeneralStyles;
 

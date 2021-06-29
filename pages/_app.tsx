@@ -5,7 +5,7 @@ import { NextSeo } from 'next-seo';
 import { AppProps } from 'next/app';
 import { ThemeProvider } from 'styled-components';
 
-import theme from '@styles/theme';
+import theme from '@styles/themes/default';
 import GlobalStyle from '@styles/globals.styles';
 
 import {
