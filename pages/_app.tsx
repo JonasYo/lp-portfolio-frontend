@@ -19,7 +19,10 @@ import {
 const App = ({ Component, pageProps }: AppProps) => (
   <ThemeProvider theme={theme}>
     <Head>
-      <link rel="shortcut icon" href="/images/favicon.ico" />
+      <link
+        rel="shortcut icon"
+        href="https://fontmeme.com/permalink/210507/2e4607094f728ee424371d3b9a0586ed.png"
+      />
     </Head>
     <NextSeo
       title={SITE_TITLE}
