@@ -3,7 +3,11 @@ import GeneralStyles from '@styles/themes/default';
 
 const { mediaQuery } = GeneralStyles;
 
-export default styled.div`
+interface IProps {
+  open: boolean;
+}
+
+export default styled.div<IProps>`
   width: 2.5rem;
   height: 1.5rem;
   position: fixed;

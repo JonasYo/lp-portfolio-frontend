@@ -27,7 +27,7 @@ const ContactUsSection = ({ title, description, contacts }: IProps) => {
 
   return (
     <Container id="contact">
-      <Content fadeIn>
+      <Content>
         <Subtitle>{title}</Subtitle>
         <Wrapper>
           <Description>{description}</Description>

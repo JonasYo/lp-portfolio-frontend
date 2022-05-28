@@ -3,7 +3,6 @@ import GeneralStyles from '@styles/themes/default';
 
 const {
   font: { sizes },
-  animations,
   patterns,
   mediaQuery,
   colors,
@@ -49,8 +48,6 @@ export const Content = styled.div`
 `;
 
 export const Subtitle = styled.h2`
-  animation: ${({ fadeIn }) => fadeIn && animations.fadeInUp} 1s linear;
-
   font-size: ${sizes.large};
   font-weight: 600;
   color: ${colors.black};

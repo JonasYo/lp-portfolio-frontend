@@ -25,7 +25,7 @@ interface IProps {
 
 const ServicesSection = ({ title, description, listTechnological }: IProps) => (
   <Container id="technologies">
-    <Content fadeIn>
+    <Content>
       <Title>{title}</Title>
 
       <Wrapper>

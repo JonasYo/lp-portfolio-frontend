@@ -3,7 +3,11 @@ import GeneralStyles from '@styles/themes/default';
 
 const { mediaQuery } = GeneralStyles;
 
-export default styled.ul`
+interface IProps {
+  open: boolean;
+}
+
+export default styled.ul<IProps>`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;

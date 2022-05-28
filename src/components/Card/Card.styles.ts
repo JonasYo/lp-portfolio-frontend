@@ -3,7 +3,6 @@ import GeneralStyles from '@styles/themes/default';
 
 const {
   font: { sizes },
-  animations,
   mediaQuery,
   colors,
   border,
@@ -39,9 +38,7 @@ export const Wrapper = styled.div`
   flex-direction: row;
 `;
 
-export const Title = styled.h3`
-  animation: ${({ fadeIn }) => fadeIn && animations.fadeInUp} 1s linear;
-
+export const Title = styled('h3')`
   font-size: ${sizes.medium};
   font-weight: 600;
   color: ${colors.black};

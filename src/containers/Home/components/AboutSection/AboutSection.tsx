@@ -15,7 +15,7 @@ interface IProps {
 
 const AboutSection = ({ title, description }: IProps) => (
   <Container id="about">
-    <Content fadeIn>
+    <Content>
       <Title>{title}</Title>
 
       <Wrapper>

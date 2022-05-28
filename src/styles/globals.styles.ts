@@ -1,4 +1,4 @@
-import { createGlobalStyle, css } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   :root {
@@ -23,41 +23,39 @@ const GlobalStyle = createGlobalStyle`
     vertical-align: baseline;
   }
   
-  ${({ theme }) => css`
-    html {
-      font-family: ${theme.font.family};
-      scroll-behavior: smooth;
+  html {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 
-      @media (max-width: 1080px) {
-        font-size: 93.75%;
-      }
-      @media (max-width: 720px) {
-        font-size: 87.5%;
-      }
+    @media (max-width: 1080px) {
+      font-size: 93.75%;
     }
-    body {
-      background-color: ${theme.colors.blackRussian};
-      color: ${theme.colors.white};
-      -webkit-font-smoothing: antialiased;
+    @media (max-width: 720px) {
+      font-size: 87.5%;
     }
-    body,
-    input,
-    textarea,
-    button {
-      font-family: 'Poppins', sans-serif;
-      font-weight: 400;
-    }
+  }
+  body {
+    background-color: var(--background);
+    color: var(--shape);
+    -webkit-font-smoothing: antialiased;
+  }
+  body,
+  input,
+  textarea,
+  button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+  }
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    strong {
-      font-weight: 600;
-    }
-  `}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong {
+    font-weight: 600;
+  }
 
   button {
     cursor: pointer;

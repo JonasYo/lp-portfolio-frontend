@@ -3,7 +3,6 @@ import GeneralStyles from '@styles/themes/default';
 
 const {
   font: { sizes },
-  animations,
   patterns,
   spacings,
   mediaQuery,
@@ -65,8 +64,6 @@ export const Wrapper = styled.div`
 `;
 
 export const Title = styled.h1`
-  animation: ${({ fadeIn }) => fadeIn && animations.fadeInUp} 1s linear;
-
   font-size: ${sizes.xlarge};
   font-weight: 600;
   text-align: center;
