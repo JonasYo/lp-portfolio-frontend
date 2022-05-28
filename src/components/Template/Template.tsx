@@ -1,10 +1,10 @@
-import React, { ReactChildren, ReactChild } from 'react';
+import React from 'react';
 
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 
 interface IProps {
-  children: ReactChild | ReactChildren;
+  children: React.ReactNode;
 }
 
 const Layout = ({ children }: IProps) => (
