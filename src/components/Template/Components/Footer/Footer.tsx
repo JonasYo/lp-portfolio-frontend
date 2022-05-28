@@ -7,7 +7,7 @@ const Footer = () => (
     <Copyright fadeIn>
       Desenvolvido por <b>Jonas Siqueira Marcelino</b>
     </Copyright>
-    <Copyright fadeIn>© Copyright 2021.</Copyright>
+    <Copyright fadeIn>© Copyright 2022.</Copyright>
   </Container>
 );
 

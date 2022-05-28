@@ -24,7 +24,7 @@ export const Container = styled.div`
   }
   ${mediaQuery.extraDesktopMediaQuery} {
     padding: ${patterns.extraDesktopPadding};
-    margin: 15rem auto;
+    margin: 10rem auto;
   }
 `;
 
@@ -38,7 +38,7 @@ export const Content = styled.div`
   }
 `;
 
-export const Subtitle = styled.h2`
+export const Title = styled.h2`
   animation: ${({ fadeIn }) => fadeIn && animations.fadeInUp} 1s linear;
 
   font-size: ${sizes.large};
@@ -64,6 +64,7 @@ export const Wrapper = styled.div`
   max-width: 60rem;
   align-self: center;
   margin-top: ${spacings.medium};
+  margin-bottom: ${spacings.medium};
 
   ${mediaQuery.tabletMediaQuery} {
     align-self: auto;
@@ -91,7 +92,7 @@ export const Description = styled.p`
     text-align: left;
   }
   ${mediaQuery.extraDesktopMediaQuery} {
-    font-size: ${sizes.large};
+    font-size: ${sizes.medium};
     text-align: left;
   }
 `;

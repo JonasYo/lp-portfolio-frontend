@@ -19,11 +19,25 @@ import {
 const App = ({ Component, pageProps }: AppProps) => (
   <ThemeProvider theme={theme}>
     <Head>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+
+      <meta charSet="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+      <link rel="shortcut icon" href="favicon.png" type="image/png" />
+
+      <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet"
+      />
+
       <link
         rel="shortcut icon"
         href="https://fontmeme.com/permalink/210507/2e4607094f728ee424371d3b9a0586ed.png"
       />
     </Head>
+
     <NextSeo
       title={SITE_TITLE}
       description={SITE_DESCRIPTION}
@@ -37,7 +51,9 @@ const App = ({ Component, pageProps }: AppProps) => (
         locale: 'pt_BR',
       }}
     />
+
     <GlobalStyle />
+
     <Component {...pageProps} />
   </ThemeProvider>
 );

@@ -3,14 +3,14 @@ import GeneralStyles from '@styles/themes/default';
 
 const { mediaQuery } = GeneralStyles;
 
-export const Ul = styled.ul`
+export default styled.ul`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
   z-index: 1;
 
   li {
-    padding: 28px 18px;
+    padding: 18px 18px 18px 0;
   }
 
   a {
@@ -37,7 +37,7 @@ export const Ul = styled.ul`
     top: 0;
     right: 0;
     height: 100vh;
-    width: 350px;
+    width: 21.875rem;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
   }

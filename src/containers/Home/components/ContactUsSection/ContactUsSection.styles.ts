@@ -44,7 +44,7 @@ export const Content = styled.div`
     margin: 8rem 0;
   }
   ${mediaQuery.extraDesktopMediaQuery} {
-    margin: 15rem 0;
+    margin: 10rem 0;
   }
 `;
 
@@ -90,7 +90,7 @@ export const Description = styled.p`
     text-align: left;
   }
   ${mediaQuery.extraDesktopMediaQuery} {
-    font-size: ${sizes.large};
+    font-size: ${sizes.medium};
     text-align: left;
   }
 `;
@@ -99,45 +99,31 @@ export const FlexWrapper = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-`;
-
-export const MailTo = styled.a`
-  font-weight: 400;
-  font-size: ${sizes.small};
-  color: ${colors.black};
   margin-top: ${spacings.small};
-  text-align: left;
+  justify-content: space-evenly;
 
   ${mediaQuery.tabletMediaQuery} {
-    font-size: ${sizes.small};
-    text-align: left;
+    justify-content: space-evenly;
   }
   ${mediaQuery.desktopMediaQuery} {
-    font-size: ${sizes.small};
-    text-align: left;
+    justify-content: left;
   }
   ${mediaQuery.extraDesktopMediaQuery} {
-    font-size: ${sizes.medium};
-    text-align: left;
+    justify-content: left;
   }
 `;
-
-export const LinkedinAddress = styled(MailTo)``;
 
 export const Icon = styled.img`
-  width: 3rem;
-  margin: 2rem 2rem 0 0;
+  width: 2rem;
+  cursor: pointer;
 
   ${mediaQuery.tabletMediaQuery} {
-    width: 3rem;
-    margin: 2rem 2rem 0 0;
+    margin: 0 3rem 0 0;
   }
   ${mediaQuery.desktopMediaQuery} {
-    width: 4rem;
-    margin: 2rem 2rem 0 0;
+    margin: 0 3rem 0 0;
   }
   ${mediaQuery.extraDesktopMediaQuery} {
-    width: 4rem;
-    margin: 2rem 2rem 0 0;
+    margin: 0 3rem 0 0;
   }
 `;

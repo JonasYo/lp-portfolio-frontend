@@ -1,4 +1,7 @@
 import React from 'react';
+import { useRouter } from 'next/router';
+
+import Button from '@components/Button';
 
 import {
   Container,
@@ -16,18 +19,33 @@ interface IProps {
     url: string;
     alt: string;
   };
+  button: {
+    title: string;
+    link: string;
+  };
 }
 
-const BannerSection = ({ title, description, image }: IProps) => (
-  <Container id="home">
-    <Content>
-      <Title>{title}</Title>
-      <Wrapper>
-        <Description>{description}</Description>
-      </Wrapper>
-    </Content>
-    <Image src={image.url} alt={image.alt} />
-  </Container>
-);
+const BannerSection = ({ title, description, image, button }: IProps) => {
+  const router = useRouter();
+
+  return (
+    <Container id="home">
+      <Content>
+        <Title>{title}</Title>
+
+        <Wrapper>
+          <Description>{description}</Description>
+        </Wrapper>
+
+        <Button
+          title={button.title}
+          type="button"
+          onClick={() => router.push(button?.link)}
+        />
+      </Content>
+      <Image src={image.url} alt={image.alt} />
+    </Container>
+  );
+};
 
 export default BannerSection;

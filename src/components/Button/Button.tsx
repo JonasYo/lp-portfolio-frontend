@@ -1,25 +1,17 @@
 import React from 'react';
 
-import {
-  Container,
-  Content,
-  Subtitle,
-  Description,
-  Wrapper,
-} from './Button.styles';
+import Container from './Button.styles';
 
-const Card = () => (
-  <Container>
-    <Content fadeIn>
-      <Subtitle>Contato</Subtitle>
-      <Wrapper>
-        <Description>
-          Produtos e serviços para melhorar sua experiência de compra no Brasil
-          e no mundo.
-        </Description>
-      </Wrapper>
-    </Content>
+interface IProps {
+  title: string;
+  type: string;
+  onClick: () => void;
+}
+
+const Button = ({ title, type, onClick }: IProps) => (
+  <Container onClick={onClick} type={type}>
+    {title}
   </Container>
 );
 
-export default Card;
+export default Button;

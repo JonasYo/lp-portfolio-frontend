@@ -44,11 +44,11 @@ export const Content = styled.div`
     margin: 8rem 0;
   }
   ${mediaQuery.extraDesktopMediaQuery} {
-    margin: 15rem 0;
+    margin: 10rem 0;
   }
 `;
 
-export const Subtitle = styled.h2`
+export const Title = styled.h2`
   animation: ${({ fadeIn }) => fadeIn && animations.fadeInUp} 1s linear;
   font-size: ${sizes.large};
   font-weight: 600;
@@ -90,7 +90,7 @@ export const Description = styled.p`
     text-align: left;
   }
   ${mediaQuery.extraDesktopMediaQuery} {
-    font-size: ${sizes.large};
+    font-size: ${sizes.medium};
     text-align: left;
   }
 `;

@@ -1,10 +1,11 @@
 import React from 'react';
+
 import Card from '@components/Card';
 
 import {
   Container,
   Content,
-  Subtitle,
+  Title,
   Description,
   Wrapper,
   CardList,
@@ -13,6 +14,7 @@ import {
 interface ITechnologies {
   title: string;
   description: string;
+  iconUrl: string;
 }
 
 interface IProps {
@@ -24,15 +26,24 @@ interface IProps {
 const ServicesSection = ({ title, description, listTechnological }: IProps) => (
   <Container id="technologies">
     <Content fadeIn>
-      <Subtitle>{title}</Subtitle>
+      <Title>{title}</Title>
+
       <Wrapper>
         <Description>{description}</Description>
       </Wrapper>
 
       <CardList>
         {listTechnological.map(
-          ({ title: titleCard, description: descriptionCard }, index) => (
-            <Card key={index} title={titleCard} description={descriptionCard} />
+          (
+            { title: titleCard, description: descriptionCard, iconUrl },
+            index,
+          ) => (
+            <Card
+              key={index}
+              title={titleCard}
+              description={descriptionCard}
+              iconUrl={iconUrl}
+            />
           ),
         )}
       </CardList>

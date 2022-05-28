@@ -1,4 +1,5 @@
 import React from 'react';
+import { useRouter } from 'next/router';
 
 import {
   Container,
@@ -6,44 +7,44 @@ import {
   Subtitle,
   Description,
   Wrapper,
-  MailTo,
-  LinkedinAddress,
   Icon,
   FlexWrapper,
 } from './ContactUsSection.styles';
 
+interface IContact {
+  link: string;
+  icon: string;
+  alt: string;
+}
 interface IProps {
   title: string;
   description: string;
-  email: {
-    link: string;
-    icon: string;
-  };
-  linkedin: {
-    link: string;
-    icon: string;
-  };
+  contacts: IContact[];
 }
 
-const ContactUsSection = ({ title, description, email, linkedin }: IProps) => (
-  <Container id="contact">
-    <Content fadeIn>
-      <Subtitle>{title}</Subtitle>
-      <Wrapper>
-        <Description>{description}</Description>
+const ContactUsSection = ({ title, description, contacts }: IProps) => {
+  const router = useRouter();
 
-        <FlexWrapper>
-          <Icon src={email.icon} alt="icon-email" />
-          <MailTo href={`mailto:${email.link}`}>{email.link}</MailTo>
-        </FlexWrapper>
+  return (
+    <Container id="contact">
+      <Content fadeIn>
+        <Subtitle>{title}</Subtitle>
+        <Wrapper>
+          <Description>{description}</Description>
 
-        <FlexWrapper>
-          <Icon src={linkedin.icon} alt="icon-linkedin" />
-          <LinkedinAddress>{linkedin.link}</LinkedinAddress>
-        </FlexWrapper>
-      </Wrapper>
-    </Content>
-  </Container>
-);
+          <FlexWrapper>
+            {contacts.map((contact) => (
+              <Icon
+                onClick={() => router.push(contact.link)}
+                src={contact.icon}
+                alt={contact.alt}
+              />
+            ))}
+          </FlexWrapper>
+        </Wrapper>
+      </Content>
+    </Container>
+  );
+};
 
 export default ContactUsSection;

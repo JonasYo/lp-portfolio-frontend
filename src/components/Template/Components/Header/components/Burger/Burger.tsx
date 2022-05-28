@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
 import RightNav from '../RightNav/RightNav';
 
-import { StyledBurger } from './Burger.styles';
+import StyledBurger from './Burger.styles';
 
 const Burger = () => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState<boolean>(false);
+
+  function handleCloseMenu() {
+    setOpen(!open);
+  }
 
   return (
     <>
@@ -14,7 +18,7 @@ const Burger = () => {
         <div />
       </StyledBurger>
 
-      <RightNav open={open} setOpen={setOpen} />
+      <RightNav open={open} handleCloseMenu={handleCloseMenu} />
     </>
   );
 };

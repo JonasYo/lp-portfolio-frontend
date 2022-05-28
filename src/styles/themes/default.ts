@@ -12,13 +12,12 @@ export default {
   font: {
     family: 'Poppins, sans-serif',
     sizes: {
-      xxsmall: '0.5rem',
       xsmall: '1.0rem',
-      small: '1.6rem',
-      medium: '2.2rem',
-      large: '3.6rem',
-      xlarge: '4.4rem',
-      xxlarge: '6.2rem',
+      small: '1.25rem',
+      medium: '1.5rem',
+      large: '2rem',
+      xlarge: '2.5rem',
+      xxlarge: '3.5rem',
     },
   },
   mediaQuery: {
@@ -48,13 +47,12 @@ export default {
     extraDesktopPadding: '0.5rem calc((100vw - 1000px) / 3)',
   },
   spacings: {
-    xxsmall: '0.8rem',
-    xsmall: '1.6rem',
-    small: '2.4rem',
-    medium: '3.2rem',
-    large: '6.0rem',
-    xlarge: '6.4rem',
-    xxlarge: '12.8rem',
+    xsmall: '0.5rem',
+    small: '1rem',
+    medium: '1.5rem',
+    large: '2rem',
+    xlarge: '3rem',
+    xxlarge: '4rem',
   },
   border: {
     radius: '0.4rem',

@@ -3,7 +3,7 @@ import React from 'react';
 import {
   Container,
   Content,
-  Subtitle,
+  Title,
   Description,
   Wrapper,
 } from './AboutSection.styles';
@@ -16,7 +16,8 @@ interface IProps {
 const AboutSection = ({ title, description }: IProps) => (
   <Container id="about">
     <Content fadeIn>
-      <Subtitle>{title}</Subtitle>
+      <Title>{title}</Title>
+
       <Wrapper>
         <Description>{description}</Description>
       </Wrapper>

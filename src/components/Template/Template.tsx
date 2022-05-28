@@ -1,18 +1,14 @@
-import * as React from 'react';
-import Head from 'next/head';
+import React, { ReactChildren, ReactChild } from 'react';
 
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 
-const Layout = ({ children }) => (
-  <div id="layout">
-    <Head>
-      <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1, shrink-to-fit=no"
-      />
-    </Head>
+interface IProps {
+  children: ReactChild | ReactChildren;
+}
 
+const Layout = ({ children }: IProps) => (
+  <div id="layout">
     <Header />
 
     <main>{children}</main>

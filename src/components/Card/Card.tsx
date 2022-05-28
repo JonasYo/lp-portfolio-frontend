@@ -1,14 +1,22 @@
 import React from 'react';
 
-import { Container, Wrapper, Title, Description } from './Card.styles';
+import { Container, Wrapper, Icon, Title, Description } from './Card.styles';
 
-const Card = ({ title, description }) => (
+interface IProps {
+  title: string;
+  description: string;
+  iconUrl: string;
+}
+
+const Card = ({ title, description, iconUrl }: IProps) => (
   <Container>
     <Wrapper>
+      <Icon src={iconUrl} />
       <Title>{title}</Title>
     </Wrapper>
 
     <Description>{description}</Description>
   </Container>
 );
+
 export default Card;

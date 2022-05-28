@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import Burger from './components/Burger/Burger';
 
-import { Container } from './Header.styles';
+import Container from './Header.styles';
 
 const Header = () => (
   <Container>
