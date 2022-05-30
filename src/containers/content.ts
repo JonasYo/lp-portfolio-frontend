@@ -3,7 +3,7 @@ const content = {
     title: 'Olá, sou Jonas Siqueira ツ',
     description: 'Front-end Developer',
     image: {
-      url: '/images/building-websites.svg',
+      url: '/images/programming.svg',
       alt:
         'Ilustração de um desenvolvedor em frente a um computador com várias linhas de código.',
     },
@@ -15,7 +15,7 @@ const content = {
   aboutSection: {
     title: 'Sobre mim',
     description:
-      'Olá, tenho 24 anos, sou Formado em Análise e Desenvolvimento de Sistemas e estou cursando Inglês na instituição de ensino de idiomas inFlux.',
+      'Olá, tenho 24 anos, sou formado em Análise e Desenvolvimento de Sistemas e atualmente cursando Inglês na instituição de ensino de idiomas inFlux.',
   },
   contactSection: {
     title: 'Contato',

@@ -33,8 +33,9 @@ const ContactUsSection = ({ title, description, contacts }: IProps) => {
           <Description>{description}</Description>
 
           <FlexWrapper>
-            {contacts.map((contact) => (
+            {contacts.map((contact, index) => (
               <Icon
+                key={index}
                 onClick={() => router.push(contact.link)}
                 src={contact.icon}
                 alt={contact.alt}

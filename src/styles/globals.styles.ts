@@ -2,8 +2,9 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   :root {
-    --background: #f0f2f5;
-    --red: #e52e4d;
+    --black: #000000;
+    --white: #ffffff;
+    --red: #DB202C;
     --green: #33cc95;
     --blue: #5429cc;
 
@@ -12,9 +13,10 @@ const GlobalStyle = createGlobalStyle`
     --text-title: #363f5f;
     --text-body: #969cb3;
 
-    --background: #f0f2f5;
+    --background: #131627;
     --shape: #ffffff;
   }
+
   * {
     margin: 0;
     padding: 0;

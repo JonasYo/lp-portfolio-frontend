@@ -1,14 +1,6 @@
 import { keyframes } from 'styled-components';
 
 export default {
-  colors: {
-    black: '#000000',
-    white: '#ffffff',
-    transparent: 'transparent',
-    aliceBlue: '#F6F9FC',
-    frostbite: '#f231a5',
-    blackRussian: '#131627',
-  },
   font: {
     family: 'Poppins, sans-serif',
     sizes: {

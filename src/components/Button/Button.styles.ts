@@ -14,6 +14,8 @@ export default styled.button`
   width: fit-content;
   height: 48px;
   padding: 0px 32px;
+  color: var(--white);
+  background: var(--red);
 
   &:hover {
     opacity: 95%;

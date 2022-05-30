@@ -8,7 +8,7 @@ interface IProps {
 }
 
 const Layout = ({ children }: IProps) => (
-  <div id="layout">
+  <div id="root">
     <Header />
 
     <main>{children}</main>

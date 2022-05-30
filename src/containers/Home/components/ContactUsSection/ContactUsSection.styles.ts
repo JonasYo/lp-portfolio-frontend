@@ -5,14 +5,13 @@ const {
   font: { sizes },
   patterns,
   mediaQuery,
-  colors,
   spacings,
 } = GeneralStyles;
 
 export const Container = styled.section`
   padding: ${patterns.mobilePadding};
   transform: skewY(1deg);
-  background-color: ${colors.white};
+  background-color: var(--white);
   display: flex;
   flex-direction: column;
 
@@ -50,8 +49,8 @@ export const Content = styled.div`
 export const Subtitle = styled.h2`
   font-size: ${sizes.large};
   font-weight: 600;
-  color: ${colors.black};
-  border-left: 6px solid ${colors.frostbite};
+  color: var(--black);
+  border-left: 6px solid var(--red);
   padding-left: 1rem;
 
   ${mediaQuery.tabletMediaQuery} {
@@ -76,7 +75,7 @@ export const Description = styled.p`
   font-weight: 400;
   text-align: center;
   font-size: ${sizes.small};
-  color: ${colors.black};
+  color: var(--black);
 
   ${mediaQuery.tabletMediaQuery} {
     font-size: ${sizes.medium};
@@ -96,7 +95,7 @@ export const FlexWrapper = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: ${spacings.small};
+  margin-top: ${spacings.large};
   justify-content: space-evenly;
 
   ${mediaQuery.tabletMediaQuery} {

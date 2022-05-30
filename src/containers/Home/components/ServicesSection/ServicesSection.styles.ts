@@ -5,7 +5,6 @@ const {
   font: { sizes },
   patterns,
   mediaQuery,
-  colors,
   spacings,
   grid,
 } = GeneralStyles;
@@ -40,8 +39,8 @@ export const Content = styled.div`
 export const Title = styled.h2`
   font-size: ${sizes.large};
   font-weight: 600;
-  color: ${colors.white};
-  border-left: 6px solid ${colors.frostbite};
+  color: var(--white);
+  border-left: 6px solid var(--red);
   padding-left: 1rem;
 
   ${mediaQuery.tabletMediaQuery} {
@@ -78,7 +77,7 @@ export const Description = styled.p`
   font-weight: 400;
   text-align: center;
   font-size: ${sizes.small};
-  color: ${colors.white};
+  color: var(--white);
 
   ${mediaQuery.tabletMediaQuery} {
     font-size: ${sizes.medium};

@@ -43,6 +43,7 @@ const BannerSection = ({ title, description, image, button }: IProps) => {
           onClick={() => router.push(button?.link)}
         />
       </Content>
+
       <Image src={image.url} alt={image.alt} />
     </Container>
   );

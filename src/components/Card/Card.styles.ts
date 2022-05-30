@@ -4,13 +4,12 @@ import GeneralStyles from '@styles/themes/default';
 const {
   font: { sizes },
   mediaQuery,
-  colors,
   border,
   spacings,
 } = GeneralStyles;
 
 export const Container = styled.div`
-  background-color: ${colors.white};
+  background-color: var(--white);
   padding: ${spacings.medium};
   font-size: ${sizes.xsmall};
   border-radius: ${border.radius};
@@ -41,7 +40,7 @@ export const Wrapper = styled.div`
 export const Title = styled('h3')`
   font-size: ${sizes.medium};
   font-weight: 600;
-  color: ${colors.black};
+  color: var(--black);
 
   ${mediaQuery.tabletMediaQuery} {
     font-size: ${sizes.small};
@@ -64,7 +63,7 @@ export const Description = styled.p`
   font-weight: 400;
   text-align: left;
   font-size: ${sizes.small};
-  color: ${colors.black};
+  color: var(--black);
   margin-top: ${spacings.small};
 
   ${mediaQuery.tabletMediaQuery} {
